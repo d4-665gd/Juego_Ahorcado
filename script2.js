@@ -121,7 +121,7 @@ const drawWord = () => {
 
 const selectRandomWord = async () => {
     try {
-      const response = await fetch('php/obtener_palabra.php');
+      const response = await fetch('obtener_palabra.php');
       console.log('Respuesta del servidor:', response); // Verifica la respuesta
       if (!response.ok) throw new Error('Error al obtener la palabra');
   
